@@ -1,4 +1,4 @@
-import { Flex, Scale, useTheme } from "@chakra-ui/core";
+import { Flex, useTheme } from "@chakra-ui/core";
 import { keyframes } from "@emotion/core";
 import React from "react";
 import Chat from "./Chat";
@@ -33,7 +33,7 @@ const Schwurbler = (props) => {
         h="100%"
         m="auto"
         flexGrow="1"
-        animation={`1.5s ${introAnimation}`}
+        animation={`1s ${introAnimation}`}
       >
         <Chat />
       </Flex>
