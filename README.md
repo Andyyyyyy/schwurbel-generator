@@ -1,3 +1,9 @@
+# Schwurbel-Generator (front end)
+Schwurbeleien sind so Inhaltslos, dass sie auch generiert sein könnten. Da kann man auch diese Arbeit abnehmen.
+🤦‍♀️ 🤦‍♂️
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

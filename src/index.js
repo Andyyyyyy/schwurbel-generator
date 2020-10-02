@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { ThemeProvider, CSSReset, theme } from "@chakra-ui/core";
+import React from "react";
+import ReactDOM from "react-dom";
+import Schwurbler from "./Schwurbler";
+
+const customTheme = {
+  ...theme,
+  radii: {
+    ...theme.radii,
+    lg: "18px",
+    md: "18px",
+    sm: "8px"
+  },
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={customTheme}>
+      <CSSReset />
+      <Schwurbler />
+    </ThemeProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
