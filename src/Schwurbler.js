@@ -29,7 +29,7 @@ const Schwurbler = (props) => {
     >
       {/* Chat Container */}
       <Flex
-        w={theme.breakpoints.sm}
+        width={["100%", theme.breakpoints.sm]}
         h="100%"
         m="auto"
         flexGrow="1"
